@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Math Test</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 700px; margin: auto; }
+    label { display: block; margin-top: 10px; }
+    .question { margin-top: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+    .choices { margin-top: 8px; }
+    textarea { width: 100%; min-height: 120px; }
+    .submit-row { margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <!-- START OF MATH TEST -->
+  <h1>Simple Math Test</h1>
+
+  <!-- optional image: put an image file named "young-woman.jpg" in the same folder if you want -->
+  <!-- <img src="young-woman.jpg" alt="young woman teaching math" style="max-width:100%;height:auto;"> -->
+
+  <!-- Name field -->
+  <label for="student-name">Your name:</label>
+  <input type="text" id="student-name" name="student-name" placeholder="Type your full name here">
+
+  <!-- Multiple choice question 1 -->
+  <div class="question">
+    <strong>1. What is 7 &times; 6 ?</strong>
+    <div class="choices">
+      <label><input type="radio" name="q1" value="30"> 30</label>
+      <label><input type="radio" name="q1" value="42"> 42</label>
+      <label><input type="radio" name="q1" value="48"> 48</label>
+    </div>
+  </div>
+
+  <!-- Multiple choice question 2 -->
+  <div class="question">
+    <strong>2. Which inequality is true?</strong>
+    <div class="choices">
+      <label><input type="radio" name="q2" value="a">&nbsp; 5 &lt; 3</label>
+      <label><input type="radio" name="q2" value="b">&nbsp; 8 &gt; 2</label>
+      <label><input type="radio" name="q2" value="c">&nbsp; 4 = 6</label>
+    </div>
+  </div>
+
+  <!-- Multiple choice question 3 (uses ampersand notation for math symbols) -->
+  <div class="question">
+    <strong>3. Which expression equals 9?</strong>
+    <div class="choices">
+      <label><input type="radio" name="q3" value="a"> 3 &plus; 3</label>
+      <label><input type="radio" name="q3" value="b"> 3 &times; 3</label>
+      <label><input type="radio" name="q3" value="c"> 12 &minus; 2</label>
+    </div>
+  </div>
+
+  <!-- Word problem with multiline text area -->
+  <div class="question">
+    <strong>4. Word problem (write your answer below):</strong>
+    <p>Anna baked 24 cookies. She wants to share them equally between 4 friends. How many cookies does each friend get? Show your work.</p>
+    <textarea id="word-answer" name="word-answer" placeholder="Type your answer and show your work here..."></textarea>
+  </div>
+
+  <!-- Extra line showing more math symbols with ampersand notation -->
+  <p>Some math symbols used on this page: &times; (times), &plus; (plus), &minus; (minus), &divide; (divide), &lt; (less than), &gt; (greater than).</p>
+
+  <!-- Submit button (does not actually send data because we aren't processing forms yet) -->
+  <div class="submit-row">
+    <button type="button" onclick="alert('This simulates submitting the test.');">Submit Test</button>
+  </div>
+
+  <!-- END OF MATH TEST -->
+</body>
+</html>
